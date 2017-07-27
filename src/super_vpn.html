@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>超级VPN</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container paper has-logo">
+        <div class="paper-title text-center">线路信息获取和配置</div>
+        <div class="paper-time text-center" data-bind="text: formatTime"></div>
+        <p class="text-right back-home"><a href="popup.html"><<回首页</a></p>
+
+        <!-- ============ 代理设置 =========== -->
+        <div class="home-links" id="user-operate-box">
+            <p class="user-input-line">
+                <input class="line-inp" type="text" id="lineInfo" placeholder="请输入线路信息">
+            </p>
+
+            <div class="text-left operate-text-line"><span data-bind="text: opText"></span></div>
+
+            <!-- 用户操作 -->
+            <div class="operate text-right">
+                <button class="btn" data-bind="click: set">设置代理</button>
+                <button class="btn btn-danger" data-bind="click: clear">清除代理</button>
+            </div>
+        </div>
+
+        <!-- =========线路信息列表=========== -->
+
+        <div id="lines-detail-box">
+            <!-- 刷新 -->
+            <div class="operate">
+                <button class="btn" data-bind="click: refreshLine">刷新线路信息</button>
+            </div>
+
+            <!-- 线路获取状态 -->
+            <p class="loading-text text-center" data-bind="visible: loadState">数据加载中...</p>
+
+            <!-- 线路信息获取结果 -->
+            <div class="lines-box" data-bind="foreach: lines">
+                <div class="item">
+                    <p>名称：<span data-bind="text: name"></span></p>
+                    <p>地址：<span class="text-bold" data-bind="text: position"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/dateformat.js"></script>
+    <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="js/super.js"></script>
+    <script type="text/javascript" src="js/line.js"></script>
+</body>
+
+</html>

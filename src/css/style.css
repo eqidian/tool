@@ -1,0 +1,137 @@
+body {
+	background: #F5F6F7;
+	font-weight: 300;
+	font-size: 14px;
+}
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-bold{ font-weight: 700; }
+.btn{
+  display: inline-block;
+  padding: 8px 20px;
+  background: #2184D1;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+.btn.btn-danger{
+  background: #d40031;
+}
+.back-home a{ text-decoration: none; }
+.back-home a:hover{ text-decoration: underline; }
+
+.container {
+  margin: 20px auto;
+  max-width: 740px;
+  min-height: 800px;
+
+}
+
+.paper {
+  margin-top: 50px;
+  margin-bottom: 40px;
+	padding: 80px 50px;
+  box-sizing: border-box;
+  background: #FFF url(../images/logo_full.png) no-repeat 50px 30px;
+  background-size: auto 30px;
+  box-shadow: 0 0 0 0.75pt #d1d1d1, 0 0 3pt 0.75pt #ccc;
+}
+.paper.has-logo{
+	padding-top: 30px;
+}
+.paper-title{
+	margin-top: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 26px;
+	font-weight: 300;
+}
+.paper-time{
+	margin-bottom: 20px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #999;
+}
+
+
+/* 首页连接列表 */
+.home-links{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #EEE;
+}
+
+.home-links > p{
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.home-links a,
+.home-links a:visited,
+.home-links a:active{
+  padding-left: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+.home-links a:hover{
+  text-decoration: underline;
+}
+
+
+/* 线路信息 */
+.lines-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.lines-box .item {
+    margin-bottom: 6px 10px;
+    border-bottom: 1px solid #EEE;
+    line-height: 160%;
+    padding: 10px 0;
+    width: 46%;
+}
+.lines-box .item > p{
+  word-wrap: break-word;
+}
+
+.loading-text{
+  height: 200px;
+  line-height: 200px;
+  color: #999;
+}
+
+.operate{
+  margin-bottom: 40px;
+}
+
+
+/* 线路测试页面 */
+.user-input-line{
+  // margin-bottom: 50px;
+}
+.line-inp{
+  display: block;
+  padding: 8px 0;
+  height: 24px;
+  width: 100%;
+  outline: none;
+  line-height: 24px;
+  font-size: 15px;
+  text-indent: 10px;
+  font-weight: 700;
+}
+
+.operate-text-line{
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #F00;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>线路测试</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container paper has-logo">
+        <div class="paper-title text-center">线路测试</div>
+        <p class="text-right back-home"><a href="popup.html"><<回首页</a></p>
+        <div class="home-links">
+            <p class="user-input-line">
+                <input class="line-inp" type="text" id="lineInfo" placeholder="请输入线路信息">
+            </p>
+
+            <!-- 用户操作 -->
+            <div class="operate text-right">
+                <button class="btn" data-bind="click: set">设置代理</button>
+                <button class="btn" data-bind="click: getLines">获取线路</button>
+                <button class="btn btn-danger" data-bind="click: clear">清除代理</button>
+            </div>
+
+            <div class="text-center operate-text" data-bind="text: opText"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="js/line.js"></script>
+</body>
+
+</html>
