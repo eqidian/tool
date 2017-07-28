@@ -20,6 +20,7 @@
     {
         "128": "images/logo.png"
     },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzSVBoaWd2p3plh/8NkZY6/wAHCVarsvOREcBsNn6qe3xZV+m+ch/AnBdSzcx+g18YxXSGRs+CVSqFecXsR9N/Wgyn7JLREN2+TI9fcP7mySg9UowMWr6Lx2sDWdlQTNxa0HzIaiycJbWzrjWhF+6BO9Q4xlzPuQZY7rA1v++pgq/Gw8wNz2RtCAO7BBaDiQZWPAe/ieW3L2rsBuXhK9bFmS6q0jZr7GxvklK6VAn+vQ1lwySdxghQD5Q4o67qjrIwDDSJIaysGhK/+OK0gwiTiPZLNBBhcwNa8Pwd9vKPJcmKjY/KvVi22TDq25YudqbsaKXgggnMo4KrGSIcvpKJQIDAQAB",
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "permissions": ["storage", "tabs", "notifications", "management", "proxy", "webRequest", "webRequestBlocking", "http://*/", "https://*/"]
 }
