@@ -4,7 +4,7 @@
 
 #### 基本信息
 1. Extension ID: **`pfjjobaghfjghgfgdgejncjkkgpehpld`**
-2. [Chrome 网上应用店URL](https://chrome.google.com/webstore/detail/hello-world-proxy/pfjjobaghfjghgfgdgejncjkkgpehpld)
+2. [Chrome 网上应用店URL](https://chrome.google.com/webstore/detail/%E7%BF%BC%E8%B5%B7%E7%82%B9%E5%B7%A5%E5%85%B7/pfjjobaghfjghgfgdgejncjkkgpehpld?utm_source=chrome-ntp-icon)
 
 
 #### 使用步骤
