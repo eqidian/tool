@@ -20,14 +20,25 @@ body {
 .btn.btn-danger{
   background: #d40031;
 }
-.back-home a{ text-decoration: none; }
+.btn.btn-sm{
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.back-home a,
+.back-home a:visited{
+  text-decoration: none;
+  color: #1682D4;
+  cursor: pointer;
+  padding: 0 5px;
+  font-weight: 700;
+  font-size: 12px;
+}
 .back-home a:hover{ text-decoration: underline; }
 
 .container {
   margin: 20px auto;
   max-width: 740px;
-  min-height: 800px;
-
+  min-height: 400px;
 }
 
 .paper {
@@ -61,14 +72,14 @@ body {
 /* 首页连接列表 */
 .home-links{
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #EEE;
 }
 
 .home-links > p{
   height: 40px;
   line-height: 40px;
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #ececec;
 }
 
 .home-links a,
@@ -109,7 +120,11 @@ body {
 }
 
 .operate{
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+.lines-detail-box-container{
+  // display: none;
 }
 
 
@@ -134,4 +149,43 @@ body {
   line-height: 50px;
   font-weight: 700;
   color: #F00;
+}
+
+/* 冲突列表 */
+.conflict-title{
+  display: none;
+  margin-top: 60px;
+  font-weight: 700;
+  color: #F00;
+  border-bottom: 1px solid #F00;
+  line-height: 30px;
+}
+.conflict-title .tip-text{
+  font-size: 10px;
+}
+.conflictor-list{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.conflict-item{
+  margin-bottom: 20px;
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 1px #EEE;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  transition: all .4s;
+}
+.conflict-item:hover{
+  box-shadow: 0 3px 10px #CCC;
+}
+.conflict-item img{
+  display: inline-block;
+  height: 40px;
+  vertical-align: middle;
 }

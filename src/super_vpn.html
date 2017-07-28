@@ -13,7 +13,6 @@
     <div class="container paper has-logo">
         <div class="paper-title text-center">线路信息获取和配置</div>
         <div class="paper-time text-center" data-bind="text: formatTime"></div>
-        <p class="text-right back-home"><a href="popup.html"><<回首页</a></p>
 
         <!-- ============ 代理设置 =========== -->
         <div class="home-links" id="user-operate-box">
@@ -31,21 +30,27 @@
         </div>
 
         <!-- =========线路信息列表=========== -->
-
         <div id="lines-detail-box">
-            <!-- 刷新 -->
-            <div class="operate">
-                <button class="btn" data-bind="click: refreshLine">刷新线路信息</button>
-            </div>
+            <p class="text-right back-home">
+                <a href="popup.html">返回首页</a>
+                <a href="##" data-bind="click: toggleLine">辅助线路信息</a>
+            </p>
 
-            <!-- 线路获取状态 -->
-            <p class="loading-text text-center" data-bind="visible: loadState">数据加载中...</p>
+            <div class="lines-detail-box-container" data-bind="visible: isShow">
+                <!-- 刷新 -->
+                <div class="operate">
+                    <button class="btn" data-bind="click: refreshLine">刷新线路信息</button>
+                </div>
 
-            <!-- 线路信息获取结果 -->
-            <div class="lines-box" data-bind="foreach: lines">
-                <div class="item">
-                    <p>名称：<span data-bind="text: name"></span></p>
-                    <p>地址：<span class="text-bold" data-bind="text: position"></span></p>
+                <!-- 线路获取状态 -->
+                <p class="loading-text text-center" data-bind="visible: loadState">数据加载中...</p>
+
+                <!-- 线路信息获取结果 -->
+                <div class="lines-box" data-bind="foreach: lines">
+                    <div class="item">
+                        <p>名称：<span data-bind="text: name"></span></p>
+                        <p>地址：<span class="text-bold" data-bind="text: position"></span></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -71,7 +71,8 @@ var viewModel = {
     lines: ko.observable(getLineData),
     status: ko.observable(statusText),
     time: ko.observable(new Date()),
-    loadState: ko.observable(true)
+    loadState: ko.observable(true),
+    isShow: ko.observable(false)
 };
 
 // 时间格式化
@@ -94,6 +95,13 @@ viewModel.refreshLine();
 // 线路测试
 viewModel.textLine = function(){
     window.location.href = 'line.html';
+}
+
+// 是否展示线路信息
+viewModel.toggleLine = function(e){
+    var showState = viewModel.isShow();
+    console.log(showState)
+    viewModel.isShow(!showState);
 }
 
 // ko激活

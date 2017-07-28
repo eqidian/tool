@@ -1,13 +1,13 @@
+// 新窗口开启
 chrome.browserAction.onClicked.addListener(function() {
     var id = chrome.runtime.id;
     chrome.tabs.create({
         url: 'chrome-extension://' + id + '/popup.html',
         selected: true
     })
-    console.log('ddd');
 })
 
-
+// 线路信息认证
 chrome.webRequest.onAuthRequired.addListener(
     function(details, callbackFn) {
         callbackFn({
@@ -20,10 +20,8 @@ chrome.webRequest.onAuthRequired.addListener(
         urls: ['<all_urls>']
     }, ['asyncBlocking']);
 
-// chrome.browserAction.onClicked.addListener(function(tab) {
-//   // No tabs or host permissions needed!
-//   console.log('Turning ' + tab.url + ' red!');
-//   chrome.tabs.executeScript({
-//     // code: 'document.body.style.backgroundColor="red"'
-//   });
-// });
+
+// 安装、启用冲突检测
+chrome.management.onInstalled.addListener(showConflicNumbers)
+chrome.management.onEnabled.addListener(showConflicNumbers)
+showConflicNumbers();
