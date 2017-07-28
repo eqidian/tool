@@ -28,7 +28,7 @@ gulp.task('js-compile', function() {
   return gulp.src(root + '/js/*.js')
     .pipe(uglify({
       output: {
-        ascii_only:true
+        ascii_only: true
       }
     }))
     .pipe(gulp.dest(targetDir + '/js'))

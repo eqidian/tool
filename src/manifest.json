@@ -11,8 +11,8 @@
         "default_title": "eqidian"
     },
 
-    "name": "翼起点线路工具",
-    "short_name": "翼起点内部专用",
+    "name": "翼起点工具",
+    "short_name": "翼起点工具, 内部专用！",
     "description": "",
     "version": "1.0.1",
     "options_page": "popup.html",
